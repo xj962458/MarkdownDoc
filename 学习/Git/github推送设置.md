@@ -27,3 +27,20 @@ git config --global user.name github用户名
 
 ## 4、说明
 当更换计算机时，不需要重新生成密钥，只需要将原计算机用户目录下的.ssh文件夹复制到新计算机上即可，而且这种方法不受计算机系统限制，Windows下的文件，放到Linux下也可以正常使用，但需要注意权限问题。最重要的是不要泄露自己的公钥和私钥，否则可能会造成仓库，甚至服务器的损坏。
+
+## 5、共享文件夹问题
+我将git仓库clone到一个NAS共享的文件夹后，VSCode中代码管理功能显示不是一个仓库，让我初始化一个仓库，然后我又用Git命令试了以下，报错结果如下：
+```text
+fatal: unsafe repository ('//dorm.xjfyt.top/WorkFile/MarkdownDoc' is owned by someone else)
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory '%(prefix)///dorm.xjfyt.top/WorkFile/MarkdownDoc'
+```
+说的好像是因为这个目录不安全，让我用命令设置成安全文件夹，即使用命令
+```bash
+git config --global --add safe.directory '%(prefix)///dorm.xjfyt.top/WorkFile/MarkdownDoc'
+```
+所以，遇见共享文件夹时，使用以下命令将其设置成安全目录，才能够正常使用Git
+```bash
+git config --global --add safe.directory '%(prefix)/文件夹地址'
+```
