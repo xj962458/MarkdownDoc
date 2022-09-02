@@ -1,0 +1,33 @@
+# 共享挂载
+mount --make-shared /opt
+docker run -d --name clouddrive --restart unless-stopped  -v /opt/docker/CloudNAS:/CloudNAS:shared  -v /opt/docker/CloudNAS/Config:/Config  -p 9798:9798 --privileged  --device /dev/fuse:/dev/fuse  cloudnas/clouddrive
+
+
+开启ipv6支持
+opkg install ip6tables
+opkg install ipv6helper
+
+https://www.cnblogs.com/toulanboy/p/9076616.html
+
+
+
+其他插件
+luci-app-docker
+luci-app-openvpn
+luci-app-syncdial #多拨
+luci-app-qbittorrent
+ 
+docker run -d \
+--name=home_assistant \
+-e TZ="Asia/Shanghai" \
+-v hass_config:/config \
+-v /dev/bus/usb:/dev/bus/usb \
+-v /var/run/dbus:/var/run/dbus \
+--net=host \
+--privileged \
+--restart unless-stopped \
+homeassistant/home-assistant:stable
+
+ip:8123
+
+docker run --init -d --name="HA" -v /opt/docker/hass:/config -v /etc/localtime:/etc/localtime:ro -p 8123:8123 homeassistant/home-assistant

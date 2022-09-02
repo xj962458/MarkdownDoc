@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "fd4bac6d61c70a87",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff2040c8cb923b7f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "学习/Python/pip常见错误总结.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f2d5c0e73101fb4a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba58b1d310e36bb2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "303f008790774ff0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5bc38446bd0d1f7a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b2eb6efd07253ec4",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "86f6d45983906a3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e8cdafd9068c4e52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "506ab958d5229a4c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "学习/Python/pip常见错误总结.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d210f693caf3f791",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "学习/Python/pip常见错误总结.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "286bcccdcd8a0933",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "deb4c85f15fb3bae",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "学习/Python/pip常见错误总结.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "ff2040c8cb923b7f",
+  "lastOpenFiles": [
+    "学习/Python/requests下载文件.md",
+    "折腾文档/Frp/frpc.md",
+    "折腾文档/HomeAssistant/HomeAssistant.md",
+    "学习/OpenCV/VS配置OpenCV.md",
+    "学习/OpenCV/编译OpenCV.md",
+    "折腾文档/UNRAID/插件.md",
+    "折腾文档/requests与CURL的相互转换.md",
+    "折腾文档/脚本/常用脚本.md",
+    "实验室/实验室项目文档/命名实体识别/环境搭建.md",
+    "折腾文档/Clash/安装下载.md"
+  ]
+}

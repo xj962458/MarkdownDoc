@@ -1,0 +1,19 @@
+dest root /
+dest ram /tmp
+lists_dir ext /var/opkg-lists
+option overlay_root /overlay
+
+
+
+src/gz openwrt_core file:///www/snapshots/targets/bcm27xx/bcm2711/packages
+src/gz openwrt_base https://openwrt.cc/snapshots/packages/aarch64_cortex-a72/base
+src/gz openwrt_luci https://openwrt.cc/snapshots/packages/aarch64_cortex-a72/luci
+src/gz openwrt_packages https://openwrt.cc/snapshots/packages/aarch64_cortex-a72/packages
+src/gz openwrt_routing https://openwrt.cc/snapshots/packages/aarch64_cortex-a72/routing
+src/gz openwrt_telephony https://openwrt.cc/snapshots/packages/aarch64_cortex-a72/telephony
+
+
+
+意外断电关机导致docker无法启动，且文件系统为只读模式
+mount -o remount rw /
+重启
