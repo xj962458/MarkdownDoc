@@ -1,16 +1,16 @@
 ## 1、添加SSH公钥
 不用按github官方生成密钥的方法进行操作，本机自带密钥即可
 用户家目录下的.ssh文件夹内，复制id_rsa.pub中的内容
-![20220902161039](https://doc.xjfyt.top/markdown_img/20220902161039.png)
+![20220902161039](http://doc.xjfyt.top/markdown_img/20220902161039.png)
 
 打开github,选择`Setting`，找到`SSH and GPG keys`，点击`New SSH key`
-![20220902161214](https://doc.xjfyt.top/markdown_img/20220902161214.png)
+![20220902161214](http://doc.xjfyt.top/markdown_img/20220902161214.png)
 
-![20220902161618](https://doc.xjfyt.top/markdown_img/20220902161618.png)
+![20220902161618](http://doc.xjfyt.top/markdown_img/20220902161618.png)
 
 ## 2、Linux下权限问题
 Linux下可能会出现这种情况，是因为权限问题
-![20220902161719](https://doc.xjfyt.top/markdown_img/20220902161719.png)
+![20220902161719](http://doc.xjfyt.top/markdown_img/20220902161719.png)
 
 解决方法
 ```bash
