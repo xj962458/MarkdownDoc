@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "学习/Python/pip常见错误总结.md",
+            "file": "学习/Git/github推送设置.md",
             "mode": "source",
             "source": true
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习/Python/pip常见错误总结.md",
+                "file": "学习/Git/github推送设置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习/Python/pip常见错误总结.md",
+                "file": "学习/Git/github推送设置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/Python/pip常见错误总结.md"
+                "file": "学习/Git/github推送设置.md"
               }
             }
           }
@@ -128,8 +128,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ff2040c8cb923b7f",
+  "active": "303f008790774ff0",
   "lastOpenFiles": [
+    "学习/Python/pip常见错误总结.md",
     "学习/Python/requests下载文件.md",
     "折腾文档/Frp/frpc.md",
     "折腾文档/HomeAssistant/HomeAssistant.md",
@@ -138,7 +139,6 @@
     "折腾文档/UNRAID/插件.md",
     "折腾文档/requests与CURL的相互转换.md",
     "折腾文档/脚本/常用脚本.md",
-    "实验室/实验室项目文档/命名实体识别/环境搭建.md",
-    "折腾文档/Clash/安装下载.md"
+    "实验室/实验室项目文档/命名实体识别/环境搭建.md"
   ]
 }
