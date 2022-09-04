@@ -1,7 +1,7 @@
 ## 1、安装 epel-release
 
 ```bash
-sudo yum install epel-release
+sudo yum install epel-release -y
 ```
 
 
