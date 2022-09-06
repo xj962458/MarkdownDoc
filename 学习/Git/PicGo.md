@@ -2,6 +2,7 @@
 picgo-core
 ```bash
 npm install picgo -g
+picgo install super-prefix  # 时间戳重命名工具
 ```
 
 ## 2、使用
@@ -40,6 +41,11 @@ config.json
       "options": ""
     }
   },
-  "picgoPlugins": {}
+  "picgoPlugins": {
+    "picgo-plugin-super-prefix": true
+  },
+  "picgo-plugin-super-prefix": {
+    "fileFormat": "YYYYMMDDHHmmss"
+  }
 }
 ```
