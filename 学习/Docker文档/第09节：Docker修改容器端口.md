@@ -101,7 +101,7 @@ vi hostconfig.json
 ### 4、重启`docker`
 
 ```bash
-systemctl stop docker
+systemctl restart docker
 ```
 
 
@@ -109,5 +109,5 @@ systemctl stop docker
 ### 5、重启容器
 
 ```bash
-docker start 容器ID
+docker restart 容器ID
 ```
