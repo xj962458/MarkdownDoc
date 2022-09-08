@@ -111,7 +111,7 @@ nohup jupyterhub -f /etc/jupyterhub/jupyterhub_config.py > /etc/jupyterhub/jupyt
 用户管理：http://IP:8000/hub/admin
 ```
 
-登录的密码是你系统用户的密码。若是要添加用户，在用户管理界面添加用户后，还需要在系统终端中修改密码：
+**登录的密码是你系统用户的密码。若是要添加用户，在用户管理界面添加用户后，还需要在系统终端中修改密码：**
 
 ```bash
 pssswd 用户

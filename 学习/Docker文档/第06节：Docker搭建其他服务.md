@@ -8,12 +8,11 @@
 * 可道云个人网盘
 * WordPress个人博客
 * `VSCode`网页版`CodeServer`
-
 * frp内网穿透服务
 
   
 
-## xxxxxxxxxx docker-compose build 文件名bash
+## 二、基本系统
 
 ​        这里所说的基本系统，是利用`Docker`创建最基本的`Linux`系统，创建之后，可以当作普通的开发环境，利用`IDE`或`ssh`工具连接作为开发环境，也可以安装`nginx`、`apache`等服务器软件充当服务器使用。基本系统是`docker`容器最基本的东西，其他的各种服务，如个人云盘、个人博客和个人网站等，都是在其基础上安装相应的软件而实现的扩展。
 
@@ -652,7 +651,7 @@ local_port = 8080
 配置文件创建好后就可以创建容器了，创建的容器使用之前设置的配置文件，创建容器的命令如下：
 
 ```bash
-docker run 
+docker run \
 -h="frpc-docker" \
 --name frpc-docker \
 -d \
