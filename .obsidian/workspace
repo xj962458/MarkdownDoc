@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "学习/CentOS/others.md",
-            "mode": "source",
+            "file": "学习/Linux/CentOS/others.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习/CentOS/others.md",
+                "file": "学习/Linux/CentOS/others.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习/CentOS/others.md",
+                "file": "学习/Linux/CentOS/others.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/CentOS/others.md"
+                "file": "学习/Linux/CentOS/others.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "ff2040c8cb923b7f",
   "lastOpenFiles": [
+    "学习/Jupyterlab/JupyterHub搭建.md",
+    "学习/Jupyterlab/jupyterlab部署.md",
+    "学习/Linux/Debian/解决Debian终端无法正常显示中文.md",
+    "学习/Linux/CentOS/others.md",
     "学习/CentOS/安装Linux内核.md",
     "学习/CentOS/修改网络地址.md",
     "学习/CentOS/centos7安装cockpit.md",
     "学习/CentOS/CentOS安装librosa及问题解决.md",
     "学习/CentOS/CentOS安装VNC.md",
-    "学习/CentOS/CentOS安装neofetch.md",
-    "学习/Git/github推送设置.md",
-    "学习/Python/pip常见错误总结.md",
-    "学习/Python/requests下载文件.md",
-    "折腾文档/Frp/frpc.md"
+    "学习/CentOS/CentOS安装neofetch.md"
   ]
 }

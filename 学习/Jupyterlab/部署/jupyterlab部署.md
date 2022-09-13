@@ -194,7 +194,21 @@ npm cache clean --force
 
 
 
-## 9、其他问题解决
+## 10、插件推荐
+
+* ipydrawio
+
+  drawio的jupyterlab插件
+
+  ```text
+  pip install ipydrawio
+  ```
+
+![image-20220912202901697](http://doc.xjfyt.top/markdown_img/20220912202902.png)
+
+
+
+## 11、其他问题解决
 
 **问题描述**
 
