@@ -21,4 +21,30 @@
   pip install jupyterlab-unfold
   ```
 
+* jupyterlab-matplotlib
+
+```bash
+pip install ipympl
+```
+
+
+
+* jupyterlab-lsp
+
+  ```bash
+  pip install jupyterlab-lsp python-lsp-server
+  ```
+
+
+* 执行时间
+
+  ```bash
+  pip install jupyterlab_execute_time
+  ```
+
   
+
+```bash
+pip install jupyterlab-lsp python-lsp-server jupyterlab_code_formatter black isort ipydrawio jupyterlab-unfold ipympl jupyterlab_execute_time
+```
+

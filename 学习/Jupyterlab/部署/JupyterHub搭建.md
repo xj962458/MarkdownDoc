@@ -71,7 +71,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 conda config --set show_channel_urls yes 
 ```
 
-
+xxxxxxxxxx pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simplebash
 
 ## 5、安装configurable-http-proxy
 
@@ -81,7 +81,25 @@ npm install -g configurable-http-proxy
 
 
 
-## 6、安装`jupyter`相关的库
+## 时区设置
+
+```bash
+dpkg-reconfigure tzdata
+```
+
+
+
+## 6、安装pycurl
+
+```bash
+conda install pycurl 
+```
+
+pycurl必须用conda装，用pip装会报错，或用源码编译安装，没有pycurl就会导致普通用户无法开启jupyterlab
+
+
+
+## 7、安装`jupyter`相关的库
 
 ```bash
 pip install jupyterlab jupyterhub jupyterhub-idle-culler jupyterlab-language-pack-zh-CN jupyterhub-dummyauthenticator ptvsd
@@ -98,7 +116,7 @@ pip install jupyterlab jupyterhub jupyterhub-idle-culler jupyterlab-language-pac
 
 
 
-## 7、安装调试工具
+## 8、安装调试工具
 
 ```bash
 conda install -c conda-forge xeus-python
@@ -108,7 +126,7 @@ jupyter labextension install @jupyterlab/debugger
 
 
 
-## 8、生成配置文件
+## 9、生成配置文件
 
 ```bash
 mkdir /etc/jupyterhub/     # 先创建文件夹
@@ -117,7 +135,7 @@ jupyterhub --generate-config -f /etc/jupyterhub/jupyterhub_config.py
 
 
 
-## 9、编辑配置文件
+## 10、编辑配置文件
 
 将一下内容追加到配置文件`/etc/jupyterhub/jupyterhub_config.py`中
 
@@ -127,7 +145,6 @@ import sys
 c.Authenticator.admin_users = {'root'}  # 管理员用户
 # 管理员是否有权在各自计算机上以其他用户身份登录，以进行调试，此选项通常用于 JupyterHub 的托管部署，以避免在启动服务之前手动创建所有用户
 c.JupyterHub.admin_access = True
-c.JupyterHub.authenticator_class = 'dummyauthenticator.DummyAuthenticator' #解决Centos下用户认证问题
 c.PAMAuthenticator.open_sessions = False # 解决多用户同时登录问题
 c.Spawner.args = ['--allow-root']  # 允许root用户使用
 c.LocalAuthenticator.create_system_users = True  # 允许创建其他用户
@@ -160,7 +177,15 @@ c.JupyterHub.load_roles = [
 
 
 
-## 10、启动
+依赖包
+
+```bash
+pip install autopep8 pycodestyle mccabe pycodestyle pydocstyle pyflakes pylint rope yapf whatthepatch
+```
+
+
+
+## 11、启动
 
 ```bash
 nohup jupyterhub -f /etc/jupyterhub/jupyterhub_config.py > /etc/jupyterhub/jupyterhub.log 2>&1 &
@@ -170,7 +195,7 @@ nohup jupyterhub -f /etc/jupyterhub/jupyterhub_config.py > /etc/jupyterhub/jupyt
 
 
 
-## 11、访问
+## 12、访问
 
 ```text
 用户登录：http://IP:8000/hub/login
