@@ -102,7 +102,7 @@ pycurl必须用conda装，用pip装会报错，或用源码编译安装，没有
 ## 7、安装`jupyter`相关的库
 
 ```bash
-pip install jupyterlab jupyterhub jupyterhub-idle-culler jupyterlab-language-pack-zh-CN jupyterhub-dummyauthenticator ptvsd
+pip install jupyterlab jupyterhub jupyterhub-idle-culler jupyterlab-language-pack-zh-CN jupyterhub-dummyauthenticator
 ```
 
 解释一下安装的包的含义：
@@ -112,21 +112,10 @@ pip install jupyterlab jupyterhub jupyterhub-idle-culler jupyterlab-language-pac
 * `jupyterhub-idle-culler`：`用于处理用户空闲进程`
 * `jupyterlab-language-pack-zh-CN`：`中文包`
 * `jupyterhub-dummyauthenticator`：用户认证插件，CentOS下若不安装，无法登录jupyterlab
-* `ptvsd`：调试用的
 
 
 
-## 8、安装调试工具
-
-```bash
-conda install -c conda-forge xeus-python
-
-jupyter labextension install @jupyterlab/debugger
-```
-
-
-
-## 9、生成配置文件
+## 8、生成配置文件
 
 ```bash
 mkdir /etc/jupyterhub/     # 先创建文件夹
@@ -135,7 +124,7 @@ jupyterhub --generate-config -f /etc/jupyterhub/jupyterhub_config.py
 
 
 
-## 10、编辑配置文件
+## 9、编辑配置文件
 
 将一下内容追加到配置文件`/etc/jupyterhub/jupyterhub_config.py`中
 
@@ -145,7 +134,7 @@ import sys
 c.Authenticator.admin_users = {'root'}  # 管理员用户
 # 管理员是否有权在各自计算机上以其他用户身份登录，以进行调试，此选项通常用于 JupyterHub 的托管部署，以避免在启动服务之前手动创建所有用户
 c.JupyterHub.admin_access = True
-c.PAMAuthenticator.open_sessions = False # 解决多用户同时登录问题
+# c.PAMAuthenticator.open_sessions = False # 解决多用户同时登录问题。此选项添加后用户用任何密码都可以登录
 c.Spawner.args = ['--allow-root']  # 允许root用户使用
 c.LocalAuthenticator.create_system_users = True  # 允许创建其他用户
 c.Spawner.notebook_dir = '~'  # 设置工作目录
@@ -185,7 +174,7 @@ pip install autopep8 pycodestyle mccabe pycodestyle pydocstyle pyflakes pylint r
 
 
 
-## 11、启动
+## 10、启动
 
 ```bash
 nohup jupyterhub -f /etc/jupyterhub/jupyterhub_config.py > /etc/jupyterhub/jupyterhub.log 2>&1 &
@@ -195,7 +184,7 @@ nohup jupyterhub -f /etc/jupyterhub/jupyterhub_config.py > /etc/jupyterhub/jupyt
 
 
 
-## 12、访问
+## 11、访问
 
 ```text
 用户登录：http://IP:8000/hub/login
