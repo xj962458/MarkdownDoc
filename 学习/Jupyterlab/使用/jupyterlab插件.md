@@ -11,7 +11,11 @@
 
 * 流程图
 
-  `ipydrawio`
+  ```bash
+  pip install ipydrawio
+  ```
+
+  
 
 * 树目录
 
@@ -21,16 +25,22 @@
   pip install jupyterlab-unfold
   ```
 
-* jupyterlab-matplotlib
+  
 
-```bash
-pip install ipympl
-```
+* 绘制可交互图
+
+	`jupyterlab-matplotlib`
+	
+	```bash
+	pip install ipympl
+	```
 
 
 
 * jupyterlab-lsp
 
+  自动提示
+  
   ```bash
   pip install jupyterlab-lsp python-lsp-server
   ```
