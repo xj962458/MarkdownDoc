@@ -1,4 +1,5 @@
 ## 1、安装locales
+
 ```bash
 apt install locales -y
 ```
@@ -27,6 +28,7 @@ source /etc/profile
 ```
 
 ## 4、效果
+
 设置完成后重新打开终端，设置成功
 
 **原来的显示**

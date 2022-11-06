@@ -42,4 +42,4 @@
 passwd
 ```
 
-![image-20220919145630426](C:\Users\xjfyt\Desktop\20220919145631.png)
+![image-20221104125247706](http://doc.xjfyt.top/markdown_img/20221104125248.png)
